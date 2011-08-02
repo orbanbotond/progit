@@ -12,9 +12,9 @@
 # Build e-book in 'epub' format for russian only
 # 	$ FORMAT=epub make-ebook ru
 
-require 'rubygems'
-require 'rdiscount'
-require 'ruby-debug'
+require "rubygems"
+require "bundler/setup"
+Bundler.require(:default)
 
 if ARGV.length == 0
   puts "you need to specify at least one language. For example: makeebooks en"
